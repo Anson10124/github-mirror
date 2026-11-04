@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+
+# Test temp dirs (tests normally use the system temp dir)
+mirror-test-*/
+tmp/
+
+# Local env / secrets
+.env
+.env.*
