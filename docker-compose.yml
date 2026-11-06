@@ -1,0 +1,12 @@
+services:
+  github-mirror:
+    build: .
+    container_name: github-mirror
+    restart: unless-stopped
+    # Tokens and settings live in .env (copy .env.example). See README for all variables.
+    env_file: .env
+    volumes:
+      - mirror-data:/data
+
+volumes:
+  mirror-data:
